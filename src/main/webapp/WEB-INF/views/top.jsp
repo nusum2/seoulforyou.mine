@@ -144,7 +144,7 @@
 			</div>
 				<button id="login-btn" class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="button" onclick="javascript:login_ok()">로그인</button>
 		        <c:if test="${userId eq null}">
-			      	<a class="p-2" href="https://kauth.kakao.com/oauth/authorize?client_id=4433f36e8b4d7a77d2fdd1a85312d7fe&redirect_uri=http://localhost:8081/sfy/kakaoLogin.do&response_type=code">
+			      	<a class="p-2" href="http://43.200.109.77:8080/seoulforyou/kakaoLogin.do">
 			 		<img src="resources/img/kakao3.png" style="width:317px;height:49px;margin-left:-8px"/>
 					</a>
 				</c:if>

@@ -6,9 +6,10 @@
 	<!-- Root Context: defines shared resources visible to all other web components -->
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property value="com.mysql.cj.jdbc.Driver" name="driverClassName"/>
-		<property value="jdbc:mysql://localhost:3306/ezdev?serverTimezone=UTC" name="url"/>
-		<property value="bigdata" name="username"/>
-		<property value="1234" name="password"/>
+		<property value="jdbc:mysql://seoulforyou.cx7tlq55cq50.ap-northeast-2.rds.amazonaws.com
+		:3306/seoulforyou?characterEncoding=UTF-8&amp;serverTimezone=Asia/Seoul" name="url"/>
+		<property value="bigdata02" name="username"/>
+		<property value="bigdata02" name="password"/>
 	</bean>
 	
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
@@ -20,9 +21,5 @@
 	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
 		<constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory" />
 	</bean>
-	
-	
-	
-	
-	
+		
 </beans>

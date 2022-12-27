@@ -131,34 +131,41 @@
 		<artifactId>standard</artifactId>
 		<version>1.1.2</version>
 		</dependency>
-      
-       <!-- Java Mail API -->
+		
+		<!-- Java Mail API -->
 	  <dependency>
 	    <groupId>javax.mail</groupId>
 	    <artifactId>mail</artifactId>
 	    <version>1.4.3</version>
 	  </dependency>
 	  
-	  <!-- https://mvnrepository.com/artifact/org.springframework/spring-context-support -->
-	<dependency>
-	    <groupId>org.springframework</groupId>
-	    <artifactId>spring-context-support</artifactId>
-	    <version>${org.springframework-version}</version>
-	</dependency>
-		
-			<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
-		<dependency>
-		    <groupId>mysql</groupId>
-		    <artifactId>mysql-connector-java</artifactId>
-		    <version>8.0.31</version>
-		</dependency>
-				
-		<!-- amazon s3 -->
+	  <!-- amazon s3 -->
 		<dependency>
 	      <groupId>com.amazonaws</groupId>
 	      <artifactId>aws-java-sdk</artifactId>
 	      <version>1.11.66</version>
 	    </dependency>
+      
+      <!-- https://mvnrepository.com/artifact/org.springframework/spring-context-support -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-context-support</artifactId>
+	    <version>${org.springframework-version}</version>
+	</dependency>
+      
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+          <dependency>
+          <groupId>mysql</groupId>
+          <artifactId>mysql-connector-java</artifactId>
+          <version>8.0.31</version>
+          </dependency>
+		
+			<!-- https://mvnrepository.com/artifact/com.oracle.jdbc/ojdbc8 -->
+			<dependency>
+			    <groupId>com.oracle.jdbc</groupId>
+			    <artifactId>ojdbc8</artifactId>
+			    <version>12.2.0.1</version>
+			</dependency>
 	
 		<!-- mybatis -->
 		<dependency>
