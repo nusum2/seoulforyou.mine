@@ -113,7 +113,7 @@ public class MemberController {
 	}
 	//카카오 로그인
 		@RequestMapping(value="/kakaoLogin.do", method=RequestMethod.GET)
-		public String getInfo(HttpServletRequest req, @RequestParam String code) throws IOException {
+		public String getInfo(HttpServletRequest req, @RequestParam (required=false) String code) throws IOException {
 	       HttpSession session = req.getSession();
 			System.out.println("code = " + code);
 	        String access_token = kakaoMapper.getToken(code); 
